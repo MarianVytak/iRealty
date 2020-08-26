@@ -1,0 +1,23 @@
+.link-arrow {
+  position: relative;
+  &:hover {
+    &:before {
+      transform: translateY(-25%) rotate(45deg);
+      border-top-color: $primary;
+      border-right-color: $primary;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-75%) rotate(135deg);
+    width: 6px;
+    height: 6px;
+    border: 1px solid transparent;
+    border-top-color: #c5c6c7;
+    border-right-color: #c5c6c7;
+    transition: .3s;
+  }
+}
