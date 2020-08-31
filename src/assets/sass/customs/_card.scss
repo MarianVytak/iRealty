@@ -1,3 +1,4 @@
+/* Card Arrivals */
 .card__arrivals {
   border-radius: 5px;
   box-shadow: 0 0 32px 3px rgba(180, 179, 179, 0.05);
@@ -147,4 +148,56 @@
 .card__arrivals_location_right {
   font-weight: 300;
   color: #adadad;
+}
+
+
+/* Card Circle */
+.card__circle {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 200px;
+  padding: 35px 20px;
+  box-shadow: -5px 0 13px rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  background-color: $white;
+  &:hover {
+    &:before {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 103px;
+    height: 84px;
+    border-radius: 100% 0 0 100% / 100% 100% 0 0;
+    background-color: rgba(#4abef7, .1);
+    transition: .3s;
+  }
+}
+
+.card__circle_title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #1c1b1b;
+}
+
+.card__circle_desc {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 13px;
+  color: #adadad;
+  line-height: 1.8;
+}
+
+.card__circle_icon {
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
 }

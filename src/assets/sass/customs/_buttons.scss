@@ -1,0 +1,7 @@
+.btn-outline {
+  border: 1px solid #e8e8e8;
+  &:hover {
+    border-color: $primary;
+    color: $primary;
+  }
+}
