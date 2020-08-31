@@ -1,0 +1,25 @@
+.home-4 {
+  padding: 80px 0 50px;
+  background-color: $white;
+}
+
+.home-4__video {
+  position: relative;
+}
+
+.home-4__video_play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 77px;
+  height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #000006;
+  background-color: $white;
+}
+
+.home-4 {}
