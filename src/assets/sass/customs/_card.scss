@@ -201,3 +201,138 @@
   bottom: 15px;
   right: 25px;
 }
+
+
+
+/* Card News */
+.card__news {
+  border-radius: 5px;
+  box-shadow: 0 0 32px 3px rgba(180, 179, 179, 0.05);
+  background-color: $white;
+  overflow: hidden;
+  transition: .3s;
+  &:hover {
+    box-shadow: 0 0 13px rgba(180, 179, 179, 0.11);
+  }
+}
+
+.card__news_content {
+  padding: 20px 20px 50px;
+}
+
+.card__news_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 12px;
+  img {
+    margin-right: 8px;
+  }
+}
+
+.card__news_info_left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 300;
+  color: #060606;
+}
+
+.card__news_info_right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #adadad;
+}
+
+.card__news_title {
+  display: flex;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: $black;
+}
+
+.card__news_desc {
+  font-weight: 300;
+  color: #514e4e;
+  line-height: 1.8;
+}
+
+
+
+/* Card News Big */
+.card__news-big {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 500px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card__news-big_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  img {
+    max-width: none;
+    max-height: none;
+  }
+}
+
+.card__news-big_content {
+  position: absolute;
+  left: 0;
+  bottom: 45px;
+  max-width: 700px;
+  padding: 0 35px;
+}
+
+.card__news-big_info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card__news-big_info_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 20px;
+  font-weight: 300;
+  color: #dfdcdc;
+  white-space: nowrap;
+  img {
+    margin-right: 10px;
+  }
+}
+
+.card__news-big_title {
+  margin-top: 10px;
+  text-shadow: 0 0 8px rgba(79, 80, 80, 0.03);
+  color: $white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+
+/* Card News History */
+.card__news-history {
+  padding: 20px 0;
+  border-bottom: 2px solid #f3f3f3;
+  &:last-child {
+    border: none;
+  }
+  .card__news_title {
+    margin-top: 5px;
+  }
+}
+
+.card__news-history_link {
+  margin-top: 5px;
+  font-weight: 300;
+}
