@@ -247,7 +247,7 @@
 }
 
 .card__news_title {
-  display: flex;
+  display: inline-block;
   margin-top: 10px;
   font-weight: 700;
   font-size: 18px;
@@ -333,6 +333,7 @@
 }
 
 .card__news-history_link {
+  display: inline-block;
   margin-top: 5px;
   font-weight: 300;
 }
