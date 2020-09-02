@@ -385,7 +385,7 @@
   padding: 25px 30px 40px;
   box-shadow: -5px 0 13px 1px rgba(0, 0, 0, 0.07);
   border-radius: 5px;
-  background-color: #1d1c1c;
+  background-color: $black;
   visibility: hidden;
   opacity: 0;
   transition: .3s;
@@ -635,7 +635,7 @@
     }
     &:nth-child(2) {
       width: 216px;
-      background-color: #1d1c1c;
+      background-color: $black;
     }
   }
 }
