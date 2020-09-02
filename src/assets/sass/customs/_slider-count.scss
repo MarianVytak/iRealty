@@ -23,11 +23,11 @@
   }
   .slick-prev {
     left: 15px;
-    transform: rotate(135deg);
+    transform: translateY(-50%) rotate(135deg);
   }
   .slick-next {
     right: 15px;
-    transform: rotate(-45deg);
+    transform: translateY(-50%) rotate(-45deg);
   }
 }
 

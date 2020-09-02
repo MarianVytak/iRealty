@@ -151,6 +151,7 @@
 }
 
 .header__bot_right_list_item {
+  height: 70px;
   position: relative;
   display: flex;
   align-items: center;
@@ -215,3 +216,4 @@
 @import "header-top-content";
 @import "city";
 @import "header-bot-content";
+@import "featured";

@@ -1,0 +1,109 @@
+.featured__link {
+  position: relative;
+  &:hover {
+    .featured__dropdown {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.featured__dropdown {
+  position: absolute;
+  top: 100%;
+  right: -65px;
+  width: 690px;
+  box-shadow: -6px 0 6px 1px rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
+  background-color: $white;
+  z-index: 3000;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  .slider__count {
+    width: 170px;
+    min-width: 170px;
+  }
+}
+
+.featured__dropdown_list_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 50px 30px;
+  border-radius: 5px;
+  background-color: $white;
+  transition: .3s;
+  &:hover {
+    background-color: #f6f8fb;
+  }
+}
+
+.featured__dropdown_list_item_content {
+  width: 100%;
+  padding: 0 30px;
+}
+
+.featured__dropdown_list_item_content_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 18px;
+  color: $black;
+}
+
+.featured__dropdown_list_item_star {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(#efeeee, .5);
+  img {
+    width: 15px;
+  }
+}
+
+.featured__dropdown_list_item_content_address {
+  margin-top: 5px;
+  font-weight: 300;
+  font-size: 12px;
+  color: $black;
+}
+
+.featured__dropdown_list_item_content_price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 24px;
+  color: $black;
+  img {
+    margin-left: 8px;
+  }
+}
+
+.featured__dropdown_list_item_content_location {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+
+.featured__dropdown_list_item_content_location_left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 20px;
+  color: $black;
+  img {
+    margin-right: 8px;
+  }
+}
+
+.featured__dropdown_list_item_content_location_right {
+  color: #adadad;
+}
