@@ -1,0 +1,30 @@
+.header-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 3000;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .logo {
+    margin-right: 40px;
+  }
+  .header__top_left_list_item_link {
+    color: $white;
+    &:before {
+      border: 1px solid transparent;
+      border-top-color: $primary;
+      border-right-color: $primary;
+    }
+  }
+  .intro__add_btn {
+    position: inherit;
+    right: auto;
+    top: auto;
+    margin-left: 15px;
+  }
+}

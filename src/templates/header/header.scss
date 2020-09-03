@@ -95,6 +95,12 @@
   justify-content: space-between;
 }
 
+.header__bot_left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .header__bot_left_list {
   display: flex;
   align-items: center;
@@ -142,6 +148,12 @@
       transition: .3s;
     }
   }
+}
+
+.header__bot_right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .header__bot_right_list {
