@@ -6,6 +6,10 @@ $('.header__bot_content_specials').slick({
     autoplay: false,
     fade: true,
     arrows: true,
-    dots: false,
-    // appendArrows: $('.header__bot_content_specials_title')
+    dots: false
+});
+
+$('.js-header-search').on('click', function (e) {
+    e.preventDefault();
+    $('.header__search').toggleClass('active');
 });
