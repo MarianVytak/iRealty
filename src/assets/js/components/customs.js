@@ -18,4 +18,20 @@ $(function () {
 
 
 
+    // View
+    $('.js-view').on('click', function (e){
+        e.preventDefault();
+        let viewContent = $(this).attr('href');
+        let viewText = $(this).text();
+        $(this).toggleClass('active');
+        $(viewContent).slideToggle();
+        if (viewText === 'Показать все') {
+            $(this).text('Скрыть');
+        } else {
+            $(this).text('Показать все');
+        }
+    });
+
+
+
 });

@@ -62,7 +62,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-left: 40px;
+  margin-right: 40px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .header__top_right_list_item_icon {
