@@ -34,4 +34,13 @@ $(function () {
 
 
 
+    // Custom Scrollbar
+    $(window).on('load',function(){
+        $('.custom-scrollbar').mCustomScrollbar({
+            theme: 'dark'
+        });
+    });
+
+
+
 });

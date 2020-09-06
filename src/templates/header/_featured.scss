@@ -13,6 +13,7 @@
   top: 100%;
   right: -65px;
   width: 690px;
+  max-height: 454px;
   box-shadow: -6px 0 6px 1px rgba(0, 0, 0, 0.09);
   border-radius: 5px;
   background-color: $white;
@@ -20,9 +21,30 @@
   opacity: 0;
   visibility: hidden;
   transition: .3s;
+  overflow-y: auto;
   .slider__count {
     width: 170px;
     min-width: 170px;
+  }
+  .mCSB_inside > .mCSB_container {
+    margin-right: 3px;
+  }
+  .mCSB_scrollTools {
+    width: 3px;
+  }
+  .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 3px;
+    background-color: $primary;
+    &:hover {
+      background-color: $primary;
+    }
+  }
+  .mCSB_scrollTools .mCSB_draggerRail {
+    width: 3px;
+    background-color: #dbd9d9;
+  }
+  .mCS-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCS-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: $primary;
   }
 }
 

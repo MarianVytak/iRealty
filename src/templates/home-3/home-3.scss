@@ -195,11 +195,23 @@
   height: 1156px;
   display: flex;
   flex-flow: row wrap;
+  margin-right: -25px;
   overflow-x: auto;
   .card__circle {
     margin-bottom: 35px;
     &:last-child {
       margin-bottom: 0;
     }
+  }
+  .mCSB_inside > .mCSB_container {
+    margin-right: 25px;
+  }
+  .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 5px;
+    background-color: #1d1c1c;
+  }
+  .mCSB_scrollTools .mCSB_draggerRail {
+    width: 5px;
+    background-color: #dbd9d9;
   }
 }

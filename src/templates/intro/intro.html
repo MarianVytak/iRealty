@@ -79,7 +79,8 @@
                     </div>
                     <ul class="slide-2__tabs list-group">
                         <li class="slide-2__tabs_item">
-                            <a class="slide-2__tabs_link active" id="list-sale-list" data-toggle="list" href="#list-sale">Продажа</a>
+                            <a class="slide-2__tabs_link active" id="list-sale-list" data-toggle="list"
+                               href="#list-sale">Продажа</a>
                         </li>
                         <li class="slide-2__tabs_item">
                             <a class="slide-2__tabs_link" id="list-rent-list" data-toggle="list" href="#list-rent">Аренда</a>
@@ -93,48 +94,218 @@
                         <div class="tab-pane fade show active" id="list-sale">
                             <form class="intro__form">
                                 <div class="intro__form_grid-1">
+                                    <div class="intro__form_type dropdown">
+                                        <div class="dropdown-toggle" id="intro__form_type-1"
+                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Тип объекта
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="intro__form_type-1">
+                                            <div class="intro__form_type_title text-primary">Жилая</div>
+                                            <div class="intro__form_type_list">
+                                                <a class="dropdown-item" href="#intro__form_type-1">квартира</a>
+                                                <a class="dropdown-item" href="#intro__form_type-1">комната</a>
+                                                <a class="dropdown-item" href="#intro__form_type-1">дом</a>
+                                                <a class="dropdown-item" href="#intro__form_type-1">таунхаус</a>
+                                            </div>
+                                            <div class="intro__form_type_title text-primary">Коммерческая</div>
+                                            <div class="intro__form_type_list">
+                                                <a class="dropdown-item" href="#intro__form_type-1">офис</a>
+                                                <a class="dropdown-item" href="#intro__form_type-1">склад</a>
+                                                <a class="dropdown-item" href="#intro__form_type-1">производство</a>
+                                                <a class="dropdown-item" href="#intro__form_type-1">торговая площадь</a>
+                                                <a class="dropdown-item" href="#intro__form_type-1">ПСН</a>
+                                                <a class="dropdown-item" href="#intro__form_type-1">здания</a>
+                                                <a class="dropdown-item" href="#intro__form_type-1">гараж</a>
+                                                <a class="dropdown-item" href="#intro__form_type-1">бокс</a>
+                                                <a class="dropdown-item" href="#intro__form_type-1">машиноместо</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="intro__form_room dropdown">
+                                        <div class="dropdown-toggle" id="intro__form_room-1"
+                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Комнат
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="intro__form_room-1">
+                                            <a class="dropdown-item" href="#intro__form_room-1">студия</a>
+                                            <a class="dropdown-item" href="#intro__form_room-1">1</a>
+                                            <a class="dropdown-item" href="#intro__form_room-1">2</a>
+                                            <a class="dropdown-item" href="#intro__form_room-1">3</a>
+                                            <a class="dropdown-item" href="#intro__form_room-1">4</a>
+                                        </div>
+                                    </div>
+                                    <div class="intro__form_area dropdown">
+                                        <div class="dropdown-toggle" id="intro__form_area-1"
+                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Метраж
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="intro__form_area-1">
+                                            <a class="dropdown-item" href="#intro__form_area-1">от 5</a>
+                                            <a class="dropdown-item" href="#intro__form_area-1">от10</a>
+                                            <a class="dropdown-item" href="#intro__form_area-1">от 15</a>
+                                            <a class="dropdown-item" href="#intro__form_area-1">от 20</a>
+                                            <a class="dropdown-item" href="#intro__form_area-1">от 25</a>
+                                        </div>
+                                    </div>
+                                    <div class="intro__form_price dropdown">
+                                        <div class="dropdown-toggle" id="intro__form_price-1"
+                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Цена
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="intro__form_price-1">
+                                            <div class="intro__form_price_range">
+                                                <label>
+                                                    <input type="number" min="0" step="1" placeholder="от">
+                                                </label>
+                                                <label>
+                                                    <input type="number" min="0" step="1" placeholder="до">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <label>
-                                        <select class="intro__form_type">
-                                            <option selected class="d-none" value="Тип объекта">Тип объекта</option>
-                                            <option value="value">value</option>
-                                            <option value="value">value</option>
-                                            <option value="value">value</option>
-                                            <option value="value">value</option>
-                                        </select>
-                                    </label>
-                                    <label>
-                                        <select>
-                                            <option selected class="d-none" value="Комнат">Комнат</option>
-                                            <option value="студия">студия</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                        </select>
-                                    </label>
-                                    <label>
-                                        <select>
-                                            <option selected class="d-none" value="Метраж">Метраж</option>
-                                            <option value="5">от 5</option>
-                                            <option value="10">от 10</option>
-                                            <option value="15">от 15</option>
-                                            <option value="20">от 20</option>
-                                            <option value="25">от 25</option>
-                                        </select>
-                                    </label>
-                                    <label>
-                                        <input type="text" placeholder="Цена">
-                                    </label>
-                                    <label>
-                                        <input class="intro__form_text" type="text" placeholder="Город, ЖК,БЦ,ТЦ адрес, метро, район, ж/д, шоссе">
+                                        <input class="intro__form_text" type="text"
+                                               placeholder="Город, ЖК,БЦ,ТЦ адрес, метро, район, ж/д, шоссе">
                                     </label>
                                 </div>
                                 <button>Найти</button>
                             </form>
                             <!-- /.form -->
                         </div>
-                        <div class="tab-pane fade" id="list-rent">Rent</div>
-                        <div class="tab-pane fade" id="list-daily">Daily</div>
+                        <div class="tab-pane fade" id="list-rent">
+                            <form class="intro__form">
+                                <div class="intro__form_grid-1">
+                                    <div class="intro__form_type dropdown">
+                                        <div class="dropdown-toggle" id="intro__form_type-2"
+                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Тип объекта
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="intro__form_type-2">
+                                            <div class="intro__form_type_title text-primary">Жилая</div>
+                                            <div class="intro__form_type_list">
+                                                <a class="dropdown-item" href="#intro__form_type-2">квартира</a>
+                                                <a class="dropdown-item" href="#intro__form_type-2">комната</a>
+                                                <a class="dropdown-item" href="#intro__form_type-2">новостройка</a>
+                                                <a class="dropdown-item" href="#intro__form_type-2">дом</a>
+                                                <a class="dropdown-item" href="#intro__form_type-2">таунхаус</a>
+                                                <a class="dropdown-item" href="#intro__form_type-2">участок</a>
+                                            </div>
+                                            <div class="intro__form_type_title text-primary">Коммерческая</div>
+                                            <div class="intro__form_type_list">
+                                                <a class="dropdown-item" href="#intro__form_type-2">офис</a>
+                                                <a class="dropdown-item" href="#intro__form_type-2">склад</a>
+                                                <a class="dropdown-item" href="#intro__form_type-2">производство</a>
+                                                <a class="dropdown-item" href="#intro__form_type-2">торговая площадь</a>
+                                                <a class="dropdown-item" href="#intro__form_type-2">ПСН</a>
+                                                <a class="dropdown-item" href="#intro__form_type-2">здания</a>
+                                                <a class="dropdown-item" href="#intro__form_type-2">гараж</a>
+                                                <a class="dropdown-item" href="#intro__form_type-2">бокс</a>
+                                                <a class="dropdown-item" href="#intro__form_type-2">машиноместо</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="intro__form_room dropdown">
+                                        <div class="dropdown-toggle" id="intro__form_room-2"
+                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Комнат
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="intro__form_room-2">
+                                            <a class="dropdown-item" href="#intro__form_room-2">студия</a>
+                                            <a class="dropdown-item" href="#intro__form_room-2">1</a>
+                                            <a class="dropdown-item" href="#intro__form_room-2">2</a>
+                                            <a class="dropdown-item" href="#intro__form_room-2">3</a>
+                                            <a class="dropdown-item" href="#intro__form_room-2">4</a>
+                                        </div>
+                                    </div>
+                                    <div class="intro__form_area dropdown">
+                                        <div class="dropdown-toggle" id="intro__form_area-2"
+                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Метраж
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="intro__form_area-2">
+                                            <a class="dropdown-item" href="#intro__form_area-2">от 5</a>
+                                            <a class="dropdown-item" href="#intro__form_area-2">от10</a>
+                                            <a class="dropdown-item" href="#intro__form_area-2">от 15</a>
+                                            <a class="dropdown-item" href="#intro__form_area-2">от 20</a>
+                                            <a class="dropdown-item" href="#intro__form_area-2">от 25</a>
+                                        </div>
+                                    </div>
+                                    <div class="intro__form_price dropdown">
+                                        <div class="dropdown-toggle" id="intro__form_price-2"
+                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Цена
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="intro__form_price-1">
+                                            <div class="intro__form_price_range">
+                                                <label>
+                                                    <input type="number" min="0" step="1" placeholder="от">
+                                                </label>
+                                                <label>
+                                                    <input type="number" min="0" step="1" placeholder="до">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label>
+                                        <input class="intro__form_text" type="text"
+                                               placeholder="Город, ЖК,БЦ,ТЦ адрес, метро, район, ж/д, шоссе">
+                                    </label>
+                                </div>
+                                <button>Найти</button>
+                            </form>
+                            <!-- /.form -->
+                        </div>
+                        <div class="tab-pane fade" id="list-daily">
+                            <form class="intro__form">
+                                <div class="intro__form_grid-1">
+                                    <div class="intro__form_type daily dropdown">
+                                        <div class="dropdown-toggle" id="intro__form_type-3"
+                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Тип объекта
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="intro__form_type-3">
+                                            <a class="dropdown-item" href="#intro__form_type-1">квартира</a>
+                                            <a class="dropdown-item" href="#intro__form_type-1">дом</a>
+                                        </div>
+                                    </div>
+                                    <label>
+                                        <input type="date" placeholder="Даты">
+                                    </label>
+                                    <div class="intro__form_area dropdown">
+                                        <div class="dropdown-toggle" id="intro__form_area-3"
+                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Состав
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="intro__form_area-3">
+                                            <a class="dropdown-item" href="#intro__form_area-1">Взрослые</a>
+                                            <a class="dropdown-item" href="#intro__form_area-1">Дети</a>
+                                        </div>
+                                    </div>
+                                    <div class="intro__form_price dropdown">
+                                        <div class="dropdown-toggle" id="intro__form_price-3"
+                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Цена
+                                        </div>
+                                        <div class="dropdown-menu" aria-labelledby="intro__form_price-3">
+                                            <div class="intro__form_price_range">
+                                                <label>
+                                                    <input type="number" min="0" step="1" placeholder="от">
+                                                </label>
+                                                <label>
+                                                    <input type="number" min="0" step="1" placeholder="до">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label>
+                                        <input class="intro__form_text" type="text"
+                                               placeholder="Город, ЖК,БЦ,ТЦ адрес, метро, район, ж/д, шоссе">
+                                    </label>
+                                </div>
+                                <button>Найти</button>
+                            </form>
+                            <!-- /.form -->
+                        </div>
                     </div>
                     <!-- /.tab-content -->
                     <div class="row mt-5">
@@ -347,7 +518,8 @@
                         выгодных условия
                     </div>
                     <div class="intro__desc">
-                        Вы можете участвовать сразу в нескольких торгах без обязательства заключать сделку если ваша цена выиграла
+                        Вы можете участвовать сразу в нескольких торгах без обязательства заключать сделку если ваша
+                        цена выиграла
                     </div>
                     <div class="slide-3__btn">
                         <button class="btn">Начать поиск</button>
