@@ -521,6 +521,12 @@
       border-right-color: $primary;
       transition: .3s;
     }
+    span {
+      display: flex;
+      img {
+        width: 10px;
+      }
+    }
   }
   .dropdown-menu {
     font-size: 14px;
