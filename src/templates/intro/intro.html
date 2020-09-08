@@ -183,7 +183,7 @@
                                                placeholder="Город, ЖК,БЦ,ТЦ адрес, метро, район, ж/д, шоссе">
                                     </label>
                                 </div>
-                                <button>Найти</button>
+                                <button class="intro__form_btn">Найти</button>
                             </form>
                             <!-- /.form -->
                         </div>
@@ -261,17 +261,17 @@
                                             <span>
                                                 <span id="intro__form_price-2_min">0</span>
                                                 &nbsp;-&nbsp;
-                                                <span id="intro__form_price-2_max">100</span>
-                                                &nbsp;млн<img src="../../assets/img/svg/rub.svg" alt="">
+                                                <span id="intro__form_price-2_max">1</span>
+                                                &nbsp;т<img src="../../assets/img/svg/rub.svg" alt="">/мес
                                             </span>
                                         </div>
                                         <div class="dropdown-menu" aria-labelledby="intro__form_price-2">
                                             <div class="intro__form_price_range">
                                                 <label>
-                                                    <input type="number" min="0" step="0.1" placeholder="от" data-target="#intro__form_price-2_min">
+                                                    <input type="number" min="0" step="1" placeholder="от" data-target="#intro__form_price-2_min">
                                                 </label>
                                                 <label>
-                                                    <input type="number" min="0" step="0.1" placeholder="до" data-target="#intro__form_price-2_max">
+                                                    <input type="number" min="0" step="1" placeholder="до" data-target="#intro__form_price-2_max">
                                                 </label>
                                             </div>
                                         </div>
@@ -281,7 +281,7 @@
                                                placeholder="Город, ЖК,БЦ,ТЦ адрес, метро, район, ж/д, шоссе">
                                     </label>
                                 </div>
-                                <button>Найти</button>
+                                <button class="intro__form_btn">Найти</button>
                             </form>
                             <!-- /.form -->
                         </div>
@@ -301,14 +301,30 @@
                                     <label>
                                         <input type="date" placeholder="Даты">
                                     </label>
-                                    <div class="intro__form_area dropdown">
-                                        <div class="dropdown-toggle" id="intro__form_area-3"
+                                    <div class="intro__form_consist dropdown">
+                                        <div class="dropdown-toggle" id="intro__form_consist-3"
                                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Состав
+                                            <span>
+                                                вз-<span id="introConsistParent">1</span>, д-<span id="introConsistChildren">1</span>
+                                            </span>
                                         </div>
-                                        <div class="dropdown-menu" aria-labelledby="intro__form_area-3">
-                                            <a class="dropdown-item" href="#intro__form_area-3">Взрослые</a>
-                                            <a class="dropdown-item" href="#intro__form_area-3">Дети</a>
+                                        <div class="dropdown-menu">
+                                            <div class="intro__form_consist_item">
+                                                <span>Взрослые</span>
+                                                <div class="np">
+                                                    <a class="intro__consist_btn minus increment" href="#">-</a>
+                                                    <input class="intro__consist_value" type="number" id="consistParent" value="1">
+                                                    <a class="intro__consist_btn plus increment" href="#">+</a>
+                                                </div>
+                                            </div>
+                                            <div class="intro__form_consist_item">
+                                                <span>Дети</span>
+                                                <div class="np">
+                                                    <a class="intro__consist_btn minus increment" href="#">-</a>
+                                                    <input class="intro__consist_value" type="number" id="consistChildren" value="1">
+                                                    <a class=" intro__consist_btn plus increment" href="#">+</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="intro__form_price dropdown">
@@ -317,8 +333,8 @@
                                             <span>
                                                 <span id="intro__form_price-3_min">0</span>
                                                 &nbsp;-&nbsp;
-                                                <span id="intro__form_price-3_max">100</span>
-                                                &nbsp;млн<img src="../../assets/img/svg/rub.svg" alt="">
+                                                <span id="intro__form_price-3_max">1</span>
+                                                &nbsp;т<img src="../../assets/img/svg/rub.svg" alt="">/сутки
                                             </span>
                                         </div>
                                         <div class="dropdown-menu" aria-labelledby="intro__form_price-3">
@@ -337,7 +353,7 @@
                                                placeholder="Город, ЖК,БЦ,ТЦ адрес, метро, район, ж/д, шоссе">
                                     </label>
                                 </div>
-                                <button>Найти</button>
+                                <button class="intro__form_btn">Найти</button>
                             </form>
                             <!-- /.form -->
                         </div>
